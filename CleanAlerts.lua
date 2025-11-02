@@ -1,6 +1,6 @@
 -- Blocks achievement alerts and talking head frames
 
-local function blockAlertFrames()
+local function blockAchievementAlertsAndTalkingHeads()
     MuteSoundFile(569143)
 
     AlertFrame:UnregisterAllEvents()
@@ -12,6 +12,6 @@ local function blockAlertFrames()
     TalkingHeadFrame:SetAlpha(0)
 end
 
-local alertBlockerFrame = CreateFrame("Frame")
-alertBlockerFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
-alertBlockerFrame:SetScript("OnEvent", blockAlertFrames)
+local achievementAlertBlockerFrame = CreateFrame("Frame")
+achievementAlertBlockerFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
+achievementAlertBlockerFrame:SetScript("OnEvent", blockAchievementAlertsAndTalkingHeads)
