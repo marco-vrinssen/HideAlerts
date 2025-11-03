@@ -1,7 +1,7 @@
 ## Interface: 110200
-## Title: CleanAlerts
+## Title: Hide Alerts
 ## Notes: Blocks achievement alerts and talking head frames
 ## Author: MIYANKO
 ## Version: 1.0.0
 
-CleanAlerts.lua
+HideAlerts.lua
